@@ -1,28 +1,25 @@
 <!doctype html>
 <html>
 <head>
-    <title>WEB - CSS</title>
+    <title>밀로밀</title>
     <meta charset="utf-8">
-    <style>
-        a {
-            text-decoration: none;
-        }
-        h1 {
-            color: red;
-            font-size: 30pt;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>밀로밀 빵종류</h1>
-    <ol>
-      <li><a href="1.html">소금빵</a></li>
-      <li><a href="2.html">크로아상</a></li>
-      <li><a href="3.thml">밤식빵</a></li>  
-    </ol>    
-    <h2>밀로밀 빵이 궁금하다면 위에 빵종류를 선택해주세요! </h2>
+    <h1 class="bottom_grid"><a href="index.html">밀로밀 빵종류</a></h1>
+    <!--hr은 수평선, 가이드라인 구분위해서는 border 속성 이용 -->
+    <div id="grid">
+        <ol>
+        <li><a href="1.html">소금빵</a></li>
+        <li><a href="2.html">크로아상</a></li>
+        <li><a href="3.html">밤식빵</a></li>  
+        </ol>    
+        <div id="article">
+            <h2>밀로밀 빵이 궁금하다면 위에 빵종류를 선택해주세요! </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugit id consectetur possimus distinctio, quisquam sed ea omnis, repellendus veritatis fugiat, quis vitae est ex a exercitationem placeat amet commodi?</p>
+        </div>  
+    </div>
 </body>
 
 </html>
