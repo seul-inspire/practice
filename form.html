@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>폼태그 연습</title>
+    <style>
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>안녕하세요</span>
+        <span>메롱</span>
+    </div>
+    <form action="http://localhost/a/login.php">
+        <label for="id_txt">ID:</label>
+        <input type="text" name="id" id="id_txt"> 
+        <label for="id_pwd">PWD:</label>
+        <input type="password" name="pwd" id="id_pwd">
+        <input type="submit" value="로그인">
+    </form>
+
+    <form action="http://localhost/a/login.php">
+        <label>ID:
+        <input type="text" name="id" id="id_txt"> 
+				</label>
+        <label>PWD:
+        <input type="password" name="pwd" id="id_pwd">
+				</label>
+        <input type="submit" value="로그인">
+    </form>
+
+    <hr>
+    <form action="http://localhost/a/login.php">
+        <p>
+            아이디: <input type="text" name="id">
+        </p>
+        <p>
+            비밀번호: <input type="password" name="pwd">
+        </p>
+        <p>
+                주소: <input type="text" name="address">
+        </p>        
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="">
+        <p>
+            text: <input type="text" name="id" value="defalut value"></p>
+        <p>
+            password: <input type="password" name="pwd" placeholder="특수문자,영어,숫자 포함 8글자이상"></p>
+        <p>
+            textarea:<textarea name="textarea" rows="3" cols="50" placeholder="자기소개를 써주세요"></textarea>
+        </p>
+    </form>
+ 
+    <form action="http://localhost/a/login.php">
+        <h1>색상</h1>
+        <select name="color">
+            <option value="">색상선택</option>
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <h1>색상2(다중선택)</h1>
+        <select name="color2" multiple>
+            <option value="">색상선택</option>
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <input type="submit" value="제출하기">
+    </form>
+
+    <form action="">
+        <input type="submit">
+        <input type="button" value="버튼" onclick="alert('hello world')">
+        <input type="reset">
+    </form>
+
+    <hr>
+        <form action="http://localhost/a/login.php">
+            <input type="text" name="id">
+            <input type="hidden" name="hide" value="egoing">
+            <input type="submit">
+        </form>
+    <hr>
+
+</body>
+</html>
