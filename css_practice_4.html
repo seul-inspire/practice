@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css_font</title>
+  <style>
+    p{
+      border: 1px solid powderblue;
+      font-size: 2rem;     
+    }
+    #test{
+      font-family: arial, verdana, "Helvetica Neun";
+      line-height: 2; /*line-height(행간) 기본값은 1.2*/
+      /*arial가 없으면 verdana, \
+      verdana가 없으면 "Helvetica Neun" */
+    }
+    /*
+      serif (장식이 있는 폰트)
+      sans-serif
+      cursive (흘림체)
+      fantasy
+      monospace (고정폭)
+    */
+    #serif{
+      font-family: serif;
+    }
+    #sans-serif{
+      font-family: sans-serif;
+    }
+    #cursive{
+      font-family: cursive;
+    }
+    #fantasy{
+      font-family: fantasy;
+    }
+    #monospace{
+      font-family: monospace;
+    }
+    #fw100{
+      font-weight: 100;
+    }
+    #fw_bold{
+      font-weight: bold;
+    }
+    #fw800{
+      font-weight: 800;
+    }
+    #type1{
+      font: italic bold 5rem/3 serif;
+      /*
+      - font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+      - font-size와 font-family는 필수로 포함되어야 하는 정보
+      */
+    }
+  </style>
+</head>
+<body>
+  <p id="test">Hello world<br>Hello world</p>
+  <p id="serif">serif</p>
+  <p id="sans-serif">sans-serif</p>
+  <p id="cursive">cursive</p>
+  <p id="fantasy">fantasy</p>
+  <p id="monospace">monospace</p>
+  <p id="fw100">font-weight 100</p>
+  <p id="fw_bold">font-weight bold</p>
+  <p id="fw800">font-weight 800</p>
+  <p id="type1">font 속성 지정</p>
+</body>
+</html>
