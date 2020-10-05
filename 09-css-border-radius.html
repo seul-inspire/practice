@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS: border-radius 속성</title>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      color: white;
+      text-align: center;
+      background-color: blue;
+      border: 10px solid orange;
+      float: left;
+      margin: 30px;
+    }
+    div:first-child {
+      border-radius: 20px;
+    }
+    div:nth-child(2) {
+      border-radius: 30%;
+    }
+    div:nth-child(3) {
+      border-radius: 50%;
+    }
+    div:nth-child(4) {
+      border-radius: 70px 0;
+    }
+    div:nth-child(5) {
+      border-radius: 100% 0 0 0;
+    }
+    div:nth-child(6) {
+      border-radius: 50% 50% 50% 0;
+    }
+    div:nth-child(7) {
+      border-radius: 100% 0;
+    }
+    div:last-child {
+      border-radius: 50% 50% 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div>box1</div>
+  <div>box2</div>
+  <div>box3</div>
+  <div>box4</div>
+  <div>box5</div>
+  <div>box6</div>
+  <div>box7</div>
+  <div>box8</div>
+</body>
+</html>
