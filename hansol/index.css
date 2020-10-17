@@ -1,9 +1,14 @@
 :root { 
   --link-basic: gray;
   --link-hover: #2d5b79;
+  --font-basic: #001829;
+}
+body {
+  min-width: 1280px;
 }
 header {
   text-align: center;
+  position: relative;
 }
 header h1 {
   position: absolute;
@@ -83,7 +88,6 @@ header .sub-menu li a:hover {
 }
 /*visual section*/
 .visual {
-
   padding: 0 50px;
   position: relative;
 }
@@ -134,7 +138,6 @@ header .sub-menu li a:hover {
 }
 .visual .control > div {
   position: relative;
-
   padding-right: 45px;
 }
 .visual .control > div > div {
@@ -162,13 +165,99 @@ header .sub-menu li a:hover {
 .visual .control > div > div a.pause {
   background-position: -108px -60px;
 }
-.visual .control a {
-  color: transparent;
-}
 .visual .contents > div {
-  border: 1px solid blue;
-  height: 640px;  
+  height: 690px;
 }
 .visual .contents .slide {
   background: url(images/bg_main02.jpg) no-repeat center;
+  color: #fff;  
+}
+.visual .contents .slide > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.visual .contents .slide .slide-icon{
+  display: inline-block;
+  color: transparent;
+/*  border: 1px solid red;*/
+  width: 124px;
+  height: 110px;
+  background: url(images/sp_com.png) no-repeat;
+  background-position: 0 -252px;
+}
+.visual .contents .slide p {
+  font-size: 1.412rem;
+}
+.visual .contents .slide p span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/*Product info*/
+.product {
+}
+.product ul {
+  padding: 46px 0 41px;
+  text-align: center;
+  font-size: 0;
+}
+.product li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 55px;
+}
+.product li a {
+  display: block;
+  font-size: 0.882rem;
+  color: var(--font-basic);
+}
+.product li a:hover {
+  color: var(--link-hover);
+  font-weight: bold;
+}
+.product li a:before {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 52px;
+  background: url(images/sp_com.png) no-repeat;
+  margin: 0 0 26px;
+}
+.product li:first-child a:before {
+  background-position: -3px -118px;
+}
+.product li:nth-child(2) a:before {
+  background-position: -75px -118px;
+}
+.product li:nth-child(3) a:before {
+  background-position: -148px -118px;
+}
+.product li:nth-child(4) a:before {
+  background-position: -219px -118px;
+}
+.product li:nth-child(5) a:before {
+  background-position: -292px -118px;
+}
+.product li:last-child a:before {
+  background-position: -364px -118px;
+}
+.product li:first-child a:hover:before {
+  background-position: -3px -184px;
+}
+.product li:nth-child(2) a:hover:before {
+  background-position: -75px -184px;
+}
+.product li:nth-child(3) a:hover:before {
+  background-position: -148px -184px;
+}
+.product li:nth-child(4) a:hover:before {
+  background-position: -219px -184px;
+}
+.product li:nth-child(5) a:hover:before {
+  background-position: -292px -184px;
+}
+.product li:last-child a:hover:before {
+  background-position: -364px -184px;
 }
