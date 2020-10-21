@@ -324,6 +324,15 @@ header .sub-menu li a:hover {
   float: left;
   margin-right: 20px;
 }
+.notice .notice-top ul li:nth-child(1) {
+  background: url("images/bg_gallery.jpg") no-repeat;
+}
+.notice .notice-top ul li:nth-child(2) {
+  background: url("images/bg_blog.jpg") no-repeat;
+}
+.notice .notice-top ul li:nth-child(3) {
+  background: url("images/bg_navi.jpg") no-repeat;
+}
 .notice .notice-top ul li a {
   display: block;
   width: 280px;
@@ -331,25 +340,31 @@ header .sub-menu li a:hover {
   color: #fff;
   font-weight: bold;
   text-align: center;  
-  line-height: 280px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  transition: all 0.5s;
 }
-.notice .notice-top ul li:nth-child(1) a {
-  background: url("images/bg_gallery.jpg") no-repeat;
-}
-.notice .notice-top ul li:nth-child(2) a {
-  background: url("images/bg_blog.jpg") no-repeat;
-}
-.notice .notice-top ul li:nth-child(3) a {
-  background: url("images/bg_navi.jpg") no-repeat;
+.notice .notice-top ul li a span {
+  display: block;
+  position: relative;
+  top: 10px;
+/*  opacity: 0;*/
+  font-weight: normal;
+  font-size: 0.824rem;
+  transition: all 0.5s;
 }
 .notice .notice-top ul li a:hover {
-  background-color: rgba(45, 91, 121, 0.5);
+  background: rgba(45, 91, 121, 0.5);
+}
+.notice .notice-top ul li a:hover span {
+  top: 0;
+  opacity: 1;
+  padding-top: 20px;
 }
 .notice .notice-top > div {
   float: left;
   width: 280px;
   height: 280px;
-  border: 1px solid red;
   box-sizing: border-box;
   background: var(--banner-bg);
   text-align: center;
