@@ -1,5 +1,6 @@
 :root { 
   --gray-color: #949394;
+  --darkgray-color: #424241;
   --point-color: #2d5b79;
   --font-basic: #001829;
   --font-slide: #333;
@@ -50,7 +51,7 @@ header .main-menu li a:hover span:after {
   bottom: -10px;
   width: 100%;
   height: 1px;
-  background-color: var(--link-hover);
+  background-color: var(--point-color);
 }
 header .sub-menu {
   position: absolute;
@@ -85,7 +86,7 @@ header .sub-menu li:last-child a{
   padding-right: 0;
 }
 header .sub-menu li a:hover {
-  color: var(--link-hover);
+  color: var(--point-color);
   text-decoration: underline;
 }
 /*visual section*/
@@ -140,7 +141,7 @@ header .sub-menu li a:hover {
   color: var(--font-basic);
 }
 .product li a:hover {
-  color: var(--link-hover);
+  color: var(--point-color);
   font-weight: bold;
 }
 .product li a:before {
@@ -219,17 +220,17 @@ header .sub-menu li a:hover {
 .magazine .slide-box > div:last-of-type{
   margin-left: 1280px;
 }
-.magazine .slide-box .left {
+.magazine .slide-box .slide-left {
   float: left;
   width: 800px;
   height: 430px;
   overflow: hidden;
   position: relative;
 }
-.magazine .slide-box .left img {
+.magazine .slide-box .slide-left img {
   width: 100%;
 }
-.magazine .slide-box .left > div {
+.magazine .slide-box .slide-left > div {
   position: absolute;
   width: 200px;
   height: 100%;  
@@ -239,26 +240,26 @@ header .sub-menu li a:hover {
   padding: 48px 20px 0;
   box-sizing: border-box;
 }
-.magazine .slide-box .left div p,
-.magazine .slide-box .left div h3,
-.magazine .slide-box .left div a {
+.magazine .slide-box .slide-left div p,
+.magazine .slide-box .slide-left div h3,
+.magazine .slide-box .slide-left div a {
   color: #fff;
 }
-.magazine .slide-box .left div h3 {
+.magazine .slide-box .slide-left div h3 {
   padding: 24px 0 8px;
 }
-.magazine .slide-box .left div h3 span {
+.magazine .slide-box .slide-left div h3 span {
   font-weight: normal;
   display: block;
 }
-.magazine .slide-box .left div p {
+.magazine .slide-box .slide-left div p {
   font-size: 0.824rem;
   line-height: 1.412rem;
 }
-.magazine .slide-box .left div p:nth-of-type(2) {
+.magazine .slide-box .slide-left div p:nth-of-type(2) {
   font-weight: 100;
 }
-.magazine .slide-box .left div a {
+.magazine .slide-box .slide-left div a {
   display: inline-block;
   width: 160px;
   height: 45px;
@@ -269,7 +270,7 @@ header .sub-menu li a:hover {
   bottom: 40px;
   right: 20px;
 }
-.magazine .slide-box .right {
+.magazine .slide-box .slide-right {
   float: right;
   width: 380px;
   height: 430px;
@@ -277,14 +278,14 @@ header .sub-menu li a:hover {
   padding: 20px 20px 0;
   box-sizing: border-box;
 }
-.magazine .slide-box .right li {
+.magazine .slide-box .slide-right li {
   padding-bottom: 20px;
 }
-.magazine .slide-box .right li a {  
+.magazine .slide-box .slide-right li a {  
   display: table;   
   width: 100%;
 }
-.magazine .slide-box .right li a div {
+.magazine .slide-box .slide-right li a div {
   display: table-cell; 
   vertical-align: middle;
   position: relative; 
@@ -293,12 +294,12 @@ header .sub-menu li a:hover {
   height: 82px; 
   color: var(--font-slide);  
 }
-.magazine .slide-box .right li a img {
+.magazine .slide-box .slide-right li a img {
   position: absolute;
   left: 0;
   top: 0;
 }
-.magazine .slide-box .right li a strong {
+.magazine .slide-box .slide-right li a strong {
   font-size: 0.765rem;
   display: block;
 }
@@ -315,10 +316,14 @@ header .sub-menu li a:hover {
   transform: translateX(642px);
   background-position: -351px -541px;
 }
+/*Banner & Notice section*/
 .notice > div {
   width: 1180px;
   margin: 0 auto;
   padding: 55px 0;
+}
+.notice .notice-top {
+  overflow: hidden;
 }
 .notice .notice-top ul li {
   float: left;
@@ -348,7 +353,7 @@ header .sub-menu li a:hover {
   display: block;
   position: relative;
   top: 10px;
-/*  opacity: 0;*/
+  opacity: 0;
   font-weight: normal;
   font-size: 0.824rem;
   transition: all 0.5s;
@@ -391,8 +396,88 @@ header .sub-menu li a:hover {
   text-indent: 0;
   margin-top:20px;
 }
-
-
+/*Notice bottom*/
+.notice article {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.notice article > div {
+  float: left;
+  width: 580px;
+  background-color: var(--banner-bg);
+  position: relative;
+}
+.notice article > div h2 {
+  font-size: 1.412rem;
+  color: var(--point-color);
+  text-align: center;
+  height: 77px;
+  line-height: 77px;
+  border-bottom: 2px solid #fff;
+}
+.notice article > div a {
+  font-size: 0.941rem;
+  color: var(--darkgray-color);
+}
+.notice article > div > a {
+  position: absolute;
+  top: 17px;
+  right: 23px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: transparent;
+  background: url(images/sp_com.png) no-repeat #fff;
+  background-position: -196px -60px;
+}
+.notice article > div a p {
+  font-size: 0.706rem;
+  color: var(--gray-color);
+}
+.notice article > div.left ul li {
+  float: left;
+  width: 50%;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.notice article > div.left ul li span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice article > div.left ul li p {
+  padding: 25px 0 20px;
+}
+.notice article > div.left ul li:first-child {
+  border-right: 1 px solid #fff;
+}
+.notice article > div.right {
+  float: right;
+}
+.notice article > div.right ul li {
+  position: relative;
+  border-bottom: 1px solid #fff;  
+  
+}
+.notice article > div.right ul li:last-child {
+  border-bottom: none; 
+}
+.notice article > div.right ul li a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  text-indent: 30px;     
+}
+.notice article > div.right ul li a p {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
 /* Slide control */
 .slide .prev,
 .slide .next {
