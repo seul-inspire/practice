@@ -529,9 +529,7 @@ footer .top > div {
   width: 1180px;
   margin: auto;
   padding: 13px 0;
-}
-footer .top > div ul {
-  float: left;
+	overflow: hidden;
 }
 footer .top > div ul li {
   float: left;
@@ -558,6 +556,71 @@ footer .top > div ul li a {
 }
 footer .top > div .right {
   float: right;
+}
+footer .top > div .right p {
+	display: inline-block;
+	background: #2a3033;
+	width: 242px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 0.765rem;
+	color: #fff;
+	vertical-align: middle;
+}
+footer .top > div .right p big {
+	font-size: 1.176rem;
+	padding-left: 15px;
+}
+footer .top > div .right select {
+	color: var(--darkgray-color);
+	font-size: 0.706rem;
+	padding-left: 21px;
+	width: 200px;
+	height: 45px;
+	box-sizing: border-box;
+	border: none;
+	vertical-align: 0.5px;
+}
+footer .bottom {
+	background: #4c5459;
+	padding: 40px 0 44px;
+	text-align: center;
+	color: #fff;
+}
+footer .bottom p {
+	display: inline-block;
+	width: 131px;
+	height: 51px;
+	background: url(images/sp_com.png) no-repeat -150px 0px;
+	color: transparent;
+}
+footer .bottom ul {
+	margin: 32px 0 14px;
+}
+footer .bottom li {
+	display: inline-block;
+	font-size: 0.824rem;
+	padding: 0 10px;
+	position: relative;
+}
+footer .bottom li:after {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 8px;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);	
+}
+footer .bottom li:last-child:after {
+	display: none;
+}
+footer .bottom address {
+	font-size: 0.824rem;
+	font-style: normal;
 }
 /* Slide control */
 .slide .prev,
